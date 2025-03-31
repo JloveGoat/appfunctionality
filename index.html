@@ -4,10 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>CartSmart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>CartSmart</h1>
+    <div id="location-container">
+        <button id="location-button">Use My Location</button>
+        <div id="coordinates-display"></div>
+    </div>
+    <input type="number" id="radius-input" min="0" placeholder="Enter x number of miles" />
+    <select id="store-select">
+        <option value="" disabled selected>Select number of stores</option>
+        <option value="1">1 Store</option>
+        <option value="2">2 Stores</option>
+        <option value="3">3 Stores</option>
+        <option value="4">4 Stores</option>
+        <option value="5">5 Stores</option>
+    </select>
+    <div id="grocery-list-container">
+        <input type="text" id="grocery-item-input" placeholder="Enter item (e.g., apple, bread)" />
+        <button id="add-item-button">Add Item</button>
+        <div id="grocery-list"></div>
+    </div>
+    <button id="search-button">Search Stores</button>
+    <div id="results-container"></div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
 <!-- End Generation Here -->
